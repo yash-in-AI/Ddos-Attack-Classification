@@ -1,0 +1,40 @@
+# =============================================================================
+# AI-Powered DDoS Attack Classification and Intrusion Detection System (IDS)
+# requirements.txt — All project dependencies
+# =============================================================================
+
+# --- Core Data Science & ML ---
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0              # Efficient model serialization (.pkl saving/loading)
+imbalanced-learn>=0.11.0   # SMOTE for handling class imbalance in network datasets
+
+# --- Deep Learning (Neural Network) ---
+tensorflow>=2.13.0         # Keras-based neural network model
+# OR use: torch>=2.0.0 if you prefer PyTorch
+
+# --- Visualization ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0             # Interactive charts in Streamlit dashboard
+
+# --- Web Dashboard ---
+streamlit>=1.25.0          # Main interactive UI framework
+altair>=5.0.0              # Alternative chart library for Streamlit
+
+# --- Live Packet Capture ---
+scapy>=2.5.0               # Low-level packet sniffing and crafting
+# pyshark>=0.6              # Uncomment if using PyShark (requires Wireshark/tshark installed)
+
+# --- Alert System ---
+plyer>=2.1.0               # Cross-platform desktop notifications (Windows/macOS/Linux)
+secure-smtplib             # Secure email sending (standard library wrapper)
+
+# --- Utilities ---
+python-dotenv>=1.0.0       # Load .env secrets (email credentials, etc.)
+tqdm>=4.65.0               # Progress bars during training/preprocessing
+colorama>=0.4.6            # Colored terminal output for logging
+
+# --- Optional: Explainability ---
+shap>=0.42.0               # SHAP values for feature importance explanation
